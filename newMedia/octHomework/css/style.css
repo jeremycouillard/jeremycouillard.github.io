@@ -1,0 +1,23 @@
+#green{
+	display: none;
+    width: 400px;
+    height: 400px;
+    background: green;
+   
+}
+
+#red{
+	display: none;
+    width: 400px;
+    height: 400px;
+    background: red;
+    }
+#yes{
+color:green;
+
+}
+
+#no{
+color:red;
+
+}

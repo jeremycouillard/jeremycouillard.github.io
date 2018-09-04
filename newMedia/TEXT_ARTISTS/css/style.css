@@ -1,0 +1,240 @@
+/******************************************************************************/
+/****sticky, responsive menu taken from http://codepen.io/MarcRay/pen/vmJBn****/
+/******************************************************************************/
+
+
+@font-face {
+  /**how to use custom font here: https://css-tricks.com/snippets/css/using-font-face/**/
+  font-family: 'tapeworm';
+  src: url('tapeworm.ttf')format('truetype'); 
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin:0;
+  padding:0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+}
+
+
+.logo {
+  width: 50px;
+  font-size: 25px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 80%; /**increase/decrease this number depending on list size**/
+}
+
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav ul a:hover{ /**add hover styles to menu links**/
+  color:red;
+}
+.main_h {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: .8;
+  top: -100px;
+  font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+    padding-bottom:60px; /**change padding depending on logo size**/
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky { /**styles the menu div**/
+  background-color: rgba(10, 10, 10, 0.7);
+  top: 0px;
+  border-bottom: 1px solid white;
+  padding-bottom:60px;
+}
+
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/**artist styles**/
+
+#ruscha { /**full page img background code here: https://css-tricks.com/perfect-full-page-background-image/**/
+  background: url(img/mountain.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:1000px;
+  margin-top: -20px; /**hack to fix gap at top**/
+  padding-top:5%;
+
+}
+
+#ruscha h1{
+  font-family: 'tapeworm', Fallback, sans-serif;
+  font-size:100px;
+  text-align:center;
+  margin:0;
+  color:yellow;
+}
+
+@media only screen and (max-width: 766px) {
+  #ruscha {
+    padding-top:40%;
+  }
+  #ruscha h1{
+    font-size:50px;
+  }
+}
+
+
+#kruger{
+  background: url(img/hand.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:1000px;
+  margin-top: -20px; /**hack to fix gap at top**/
+}
+
+#holzer{
+  background-color:pink;
+  color:black;
+  height:1000px;
+  margin-top: -20px;
+}
+
+#martinez{
+  height:1000px;
+  background-color:black;
+  color:white;
+  margin-top:-20px;
+
+}
