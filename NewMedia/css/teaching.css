@@ -1,0 +1,74 @@
+/*teaching.css for my new media classes at LAGCC*/
+
+html, body{
+font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+font-size:13px;
+margin:0;
+padding:0;
+border:0;
+height:100%;
+min-height:100%;
+}
+* html body { /*IE6 hack*/
+    padding:30px 0;
+}
+* html #content { /*IE6 hack*/
+    height:100%; 
+    width:100%; 
+}
+a{
+	color:#9c63ff;
+	text-decoration: none;
+}
+
+a:hover{
+	color:#60e386;
+}
+
+ul li{
+	list-style: circle;
+}
+
+h2{
+	color:#ea6ba4;
+}
+/*LAYOUT*/
+#container {
+ margin:30px 0;
+ width: 100%;
+ min-width:800px;
+ height:100%;
+ min-height:100%;
+}
+#header { 
+ position:fixed;
+ left:0;
+ width:100%;
+ color:black;
+ background: #e5e5e5; 
+ padding-left:15px;
+ padding-bottom:15px;
+ height: 40px;
+ top:0;
+}
+#main {
+ min-height:100%;
+ background: black;
+ color:#1ee3df; 
+ padding-left: 20px;
+ padding-top:40px;
+ padding-bottom:50px;
+}
+#footer{
+	position:fixed;
+	left:0;
+	padding-top:15px;
+	padding-left:10px;
+	width:100%;
+	height:25px;
+	background:#5f5f5f;
+	color:white;
+	bottom:0;
+}
+#footer a{color:#eeed76;}
+#footer a:hover{color:#8fdf7d;
