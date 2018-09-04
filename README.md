@@ -1,2 +1,2 @@
 # jeremycouillard.github.io
-##Web pages for my classes at LaGCC
+Web pages for my classes at LaGCC
